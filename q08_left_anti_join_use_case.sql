@@ -25,14 +25,14 @@ create table event_category
   category varchar(100)
 );
 
-drop table physician_speciality;
+drop table if exists physician_speciality;
 create table physician_speciality
 (
   physician_id int,
   speciality varchar(50)
 );
 
-drop table patient_treatment;
+drop table if exists patient_treatment;
 create table patient_treatment
 (
   patient_id int,

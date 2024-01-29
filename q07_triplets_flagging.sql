@@ -51,7 +51,7 @@ Using CTE for readability, check the prior and following days with LAG and LEAD 
 */
 
 WITH extreme_cold AS (
-    SELECT * FROM weather WHERE temperature < 0 -- filter values for temps below 0.
+    SELECT * FROM weather WHERE temperature < 0 -- pre-filter values for temps below 0.
 ),
 consec_colds AS (
     SELECT *,
